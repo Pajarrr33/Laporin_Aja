@@ -25,3 +25,4 @@ $routes->get('/admin', 'Admin::index');
 
 $routes->get('/masyarakat/lihat', 'Masyarakat::lihat');
 $routes->get('/masyarakat/new', 'Masyarakat::new');
+$routes->post('/pengaduan/save', 'Pengaduan::save');

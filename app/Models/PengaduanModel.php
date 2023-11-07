@@ -9,7 +9,7 @@ class PengaduanModel extends Model
     protected $table = 'pengaduan';
     protected $useAutoIncrement = true;
     protected $useTimestamps = true;
-    protected $allowedFields = ['tanggal_pengaduan', 'nik', 'isi_pengaduan', 'foto', 'status_pengaduan'];
+    protected $allowedFields = ['id_pengaduan', 'tanggal_pengaduan', 'nik', 'isi_pengaduan', 'foto', 'status_pengaduan'];
 
     public function getPengaduan($id = false)
     {
@@ -17,6 +17,6 @@ class PengaduanModel extends Model
             return $this->findAll();
         }
 
-        return $this->where(['id' => $id])->first();
+        return $this->where(['id_pengaduan' => $id])->first();
     }
 }
