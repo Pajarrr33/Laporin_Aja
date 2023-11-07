@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <title>Kontol</title>
+    <title>Laporin Aja</title>
 </head>
 <body>
 
