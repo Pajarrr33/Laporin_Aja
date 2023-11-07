@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 WARNING - 2023-11-07 03:06:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
  1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
  2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
@@ -286,3 +287,63 @@ WHERE `username` = :username:
  9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+=======
+ERROR - 2023-11-07 03:48:18 --> mysqli_sql_exception: Table 'masyarakat' already exists in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\xampp\htdocs\Laporin-Aja\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\xampp\htdocs\Laporin-Aja\app\Database\Migrations\2023-11-07-032759_Masyarakat.php(46): CodeIgniter\Database\Forge->createTable('masyarakat')
+#5 C:\xampp\htdocs\Laporin-Aja\system\Database\MigrationRunner.php(873): App\Database\Migrations\Masyarakat->up()
+#6 C:\xampp\htdocs\Laporin-Aja\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Laporin-Aja\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Laporin-Aja\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Laporin-Aja\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Laporin-Aja\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+>>>>>>> 6a782a363109bd1f21cf12d820998140e4f6f5d8
+ERROR - 2023-11-07 04:07:25 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\Laporin_Aja\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\Laporin_Aja\app\Database\Migrations\2023-11-07-040524_Pengaduan.php(39): CodeIgniter\Database\Forge->createTable('pengaduan')
+#5 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(873): App\Database\Migrations\Pengaduan->up()
+#6 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Laporin_Aja\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Laporin_Aja\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Laporin_Aja\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Laporin_Aja\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-11-07 04:09:41 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\Laporin_Aja\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\Laporin_Aja\app\Database\Migrations\2023-11-07-040524_Pengaduan.php(38): CodeIgniter\Database\Forge->createTable('pengaduan')
+#5 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(873): App\Database\Migrations\Pengaduan->up()
+#6 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Laporin_Aja\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Laporin_Aja\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Laporin_Aja\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Laporin_Aja\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-11-07 04:10:50 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Laporin_Aja\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\Laporin_Aja\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\Laporin_Aja\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\Laporin_Aja\app\Database\Migrations\2023-11-07-040524_Pengaduan.php(38): CodeIgniter\Database\Forge->createTable('pengaduan')
+#5 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(873): App\Database\Migrations\Pengaduan->up()
+#6 C:\xampp\htdocs\Laporin_Aja\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Laporin_Aja\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Laporin_Aja\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Laporin_Aja\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Laporin_Aja\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-11-07 04:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-07 04:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -6,12 +6,11 @@ use CodeIgniter\Database\Migration;
 
 class Tanggapan extends Migration
 {
-   public function up()
+    public function up()
    {
       $this->forge->addField([
          'id_tanggapan' => [
             'type' => 'INT',
-            'unsigned' => true,
             'auto_increment' => true,
           ],
           'id_pengaduan' => [
@@ -35,7 +34,7 @@ class Tanggapan extends Migration
           ],
       ]);
    
-      $this->forge->addPrimaryKey('id');
+      $this->forge->addPrimaryKey('id_tanggapan');
       $this->forge->createTable('tanggapan');
    }
    
