@@ -59,8 +59,8 @@
                 <div>
                     <div class="lg:text-left">
                         <h1 class="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">PUNYA PERMASALAHAN YANG SULIT DIATASI?</h1>
-                        <p class="mt-2 mb-5 text-lg text-gray-600 sm:mt-8 font-inter">Lsasaaporkan saja semua masalahmu disini. masalahmu akan langsung ditanggapi dan segera di beri solusi oleh team kami.</p>
-                        <a href="#" class="px-4 py-3 md:px-40 md:py-3 lg:px-40 lg:py-3 text-lg text-white font-poppins transition-colors duration-300" style="background-color: #57a686;">Laporkan sekarang</a>
+                        <p class="mt-2 mb-5 text-lg text-gray-600 sm:mt-8 font-inter">Laporkan saja semua masalahmu disini. masalahmu akan langsung ditanggapi dan segera di beri solusi oleh team kami.</p>
+                        <a href="/login" class="px-4 py-3 md:px-40 md:py-3 lg:px-40 lg:py-3 text-lg text-white font-poppins transition-colors duration-300" style="background-color: #57a686;">Laporkan sekarang</a>
                     </div>
                 </div>
 
@@ -149,7 +149,7 @@
                 Bekerja sama dengan banyak badan badan usaha milik negara demi masyarakat di seluruh indonesia
                 </p>
 
-                <a href="#" class="px-4 py-3 md:px-40 md:py-3 lg:px-40 lg:py-3 text-lg text-white font-poppins transition-colors duration-300" style="background-color: #57a686;">Laporkan sekarang</a>
+                <a href="/login" class="px-4 py-3 md:px-40 md:py-3 lg:px-40 lg:py-3 text-lg text-white font-poppins transition-colors duration-300" style="background-color: #57a686;">Laporkan sekarang</a>
             </div>
 
             <div class="mb-6 md:mb-0 sm:mt-2 md:mt-4 lg:mt-6">

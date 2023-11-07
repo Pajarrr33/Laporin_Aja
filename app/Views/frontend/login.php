@@ -33,7 +33,7 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="primary-btn">Log In</button>
+								<a href="/laporan"><button type="submit" value="submit" class="primary-btn">Log In</button></a>
 								<a href="#">Forgot Password?</a>
 							</div>
 						</form>
@@ -45,7 +45,7 @@
 						<div class="hover">
 							<h4>Baru di website kami?</h4>
 							<p>Buat akun terlebih dahulu untuk mengakses seluruh fitur yang ada</p>
-							<a class="primary-btn" href="">register</a>
+							<a class="primary-btn" href="/register">register</a>
 						</div>
 					</div>
 				</div>
