@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Finance</title>
+    <title>Laporin Aja </title>
     <link rel="icon" href="/assets/img/logo.png" type="image/png">
 
     <link rel="stylesheet" href="/assets/css/bootstrap1.min.css" />
@@ -38,7 +38,11 @@
     <link rel="stylesheet" href="/assets/css/metisMenu.css">
 
     <link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/colors/default.css" id="colorSkinCSS">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body class="crm_body_bg">
@@ -65,92 +69,47 @@
                 </ul>
             </li>
             <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
+                <a class="has-arrow" href="/admin/pengaduan/" aria-expanded="false">
                     <img src="/assets/img/menu-icon/2.svg" alt>
-                    <span>Pages</span>
+                    <span>Pengaduan</span>
                 </a>
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="resister.html">Register</a></li>
-                    <li><a href="forgot_pass.html">Forgot Password</a></li>
+                    <li><a href="/admin/pengaduan/">List Pengaduan</a></li>
+                    <li><a href="resister.html">Tambah Pengaduan</a></li>
+                    <li><a href="forgot_pass.html">Update Pengaduan</a></li>
                 </ul>
             </li>
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
                     <img src="/assets/img/menu-icon/3.svg" alt>
-                    <span>Applications</span>
+                    <span>Tanggapan</span>
                 </a>
                 <ul>
-                    <li><a href="mail_box.html">Mail Box</a></li>
-                    <li><a href="chat.html">Chat</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </li>
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <img src="/assets/img/menu-icon/4.svg" alt>
-                    <span>UI Component</span>
-                </a>
-                <ul>
-                    <li><a href="#">Elements</a>
-                        <ul>
-                            <li><a href="buttons.html">Buttons</a></li>
-                            <li><a href="dropdown.html">Dropdowns</a></li>
-                            <li><a href="Badges.html">Badges</a></li>
-                            <li><a href="Loading_Indicators.html">Loading Indicators</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Components</a>
-                        <ul>
-                            <li><a href="notification.html">Notifications</a></li>
-                            <li><a href="progress.html">Progress Bar</a></li>
-                            <li><a href="carousel.html">Carousel</a></li>
-                            <li><a href="cards.html">cards</a></li>
-                            <li><a href="Pagination.html">Pagination</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <img src="/assets/img/menu-icon/5.svg" alt>
-                    <span>Widgets</span>
-                </a>
-                <ul>
-                    <li><a href="chart_box_1.html">Chart Boxes 1</a></li>
-                    <li><a href="profilebox.html">Profile Box</a></li>
+                    <li><a href="mail_box.html">List Tanggapan</a></li>
+                    <li><a href="chat.html">Tambah Tanggapan</a></li>
+                    <li><a href="faq.html">Update Tanggapan</a></li>
                 </ul>
             </li>
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
                     <img src="/assets/img/menu-icon/6.svg" alt>
-                    <span>Forms</span>
+                    <span>Manage Account</span>
                 </a>
                 <ul>
-                    <li><a href="#">Elements</a>
+                    <li><a href="#">Manage Admin / Staff account</a>
                         <ul>
-                            <li><a href="data_table.html">Data Tables</a></li>
-                            <li><a href="bootstrap_table.html">Grid Tables</a></li>
-                            <li><a href="datepicker.html">Date Picker</a></li>
+                            <li><a href="buttons.html">List Account</a></li>
+                            <li><a href="dropdown.html">Tambah akun</a></li>
+                            <li><a href="Badges.html">Update Akun</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Widgets</a>
+                    <li><a href="#">Manage Masyarakat Account</a>
                         <ul>
-                            <li><a href="Input_Selects.html">Input Selects</a></li>
-                            <li><a href="Input_Mask.html">Input Mask</a></li>
+                            <li><a href="notification.html">List Account</a></li>
+                            <li><a href="progress.html">Tambah Akun</a></li>
+                            <li><a href="carousel.html">Update Akun</a></li>
                         </ul>
                     </li>
-                </ul>
-            </li>
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <img src="/assets/img/menu-icon/7.svg" alt>
-                    <span>Charts</span>
-                </a>
-                <ul>
-                    <li><a href="chartjs.html">ChartJS</a></li>
-                    <li><a href="apex_chart.html">Apex Charts</a></li>
-                    <li><a href="chart_sparkline.html">chart sparkline</a></li>
                 </ul>
             </li>
         </ul>
@@ -217,7 +176,6 @@
             </div>
         </div>
     </section>
-
 
 
     <script src="/assets/js/jquery1-3.4.1.min.js"></script>

@@ -55,7 +55,7 @@ class Pengaduan extends BaseController
                     'isi' => $pengaduan['isi'],
                     'img' => $img,
                     'tanggal' => date("l j F H:i"),
-                    'status' => 0,
+                    'status' => '0',
                 );
                 $this->PengaduanModel->create($data);
 
@@ -137,4 +137,49 @@ class Pengaduan extends BaseController
             return redirect()->to('/');
         }
     }
-}
+
+
+    // Admin Function 
+    public function list_pengaduan()
+    {
+        $pengaduan = $this->PengaduanModel->findAll();
+        $tanggapan = $this->TanggapanModel->findAll();
+        $data = array(
+            "pengaduan" => $pengaduan,
+            "tanggapan" => $tanggapan,
+        );
+        return view('admin/list_pengaduan',$data);
+    }
+
+    public function terima_pengaduan($id = null)
+    {
+        if($id != null)
+        {
+            $data = array(
+                'status' => '1'
+            );
+            $this->PengaduanModel->update_data($id,$data);
+            return redirect()->to('/admin/pengaduan/');
+        }
+        else
+        {
+            return redirect()->to('/admin/pengaduan/');
+        }
+    }
+
+    public function tolak_pengaduan($id = null)
+    {
+        if($id != null)
+        {
+            $data = array(
+                'status' => '4'
+            );
+            $this->PengaduanModel->update_data($id,$data);
+            return redirect()->to('/admin/pengaduan/');
+        }
+        else
+        {
+            return redirect()->to('/admin/pengaduan/');
+        }
+    }
+}   
