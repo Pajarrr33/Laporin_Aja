@@ -7,10 +7,16 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/','Home::index');
-$routes->get('/laporan','Home::laporan');
 $routes->get('/login','Home::login');
 $routes->get('/register','Home::register');
-$routes->get('/user','Home::user');
+$routes->get('/user','User::index');
+
+$routes->get('/pengaduan','Pengaduan::index');
+$routes->post('/tulis_pengaduan','Pengaduan::pengaduan');
+$routes->get('/update_pengaduan/(:any)' ,'Pengaduan::update/$1');
+$routes->post('/tulis_pengaduan/(:any)','Pengaduan::update_pengaduan/$1');
+
+$routes->get('/admin/dashboard/','Home::dashboard');
 
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/valid_login', 'Admin::valid_login');

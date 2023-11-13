@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS ============================================= -->
-	<link rel="stylesheet" href="assets/css/linearicons.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/themify-icons.css">
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/owl.carousel.css">
-	<link rel="stylesheet" href="assets/css/nice-select.css">
-	<link rel="stylesheet" href="assets/css/nouislider.min.css">
-	<link rel="stylesheet" href="assets/css/ion.rangeSlider.css" />
-	<link rel="stylesheet" href="assets/css/ion.rangeSlider.skinFlat.css" />
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="plugin/owlcarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugin/owlcarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-	<link href="assets/css/theme.css" rel="stylesheet" />
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/linearicons.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/themify-icons.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/nice-select.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="<?= base_url() ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?= base_url() ?>plugin/owlcarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>plugin/owlcarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link href="<?= base_url() ?>assets/css/theme.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+	<script src="<?= base_url() ?>assets/js/vendor/jquery-2.2.4.min.js"></script>
     <title>Laporin Aja</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo_1.png" width="150px" height="30px"  alt="logo">
+                <img src="<?= base_url() ?>assets/img/logo_1.png" width="150px" height="30px"  alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,7 +52,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 col-lg-2 mb-3">
-              <img src="assets/img/logo2-removebg-preview.png" alt="logo" width="150px" height="30px">
+              <img src="<?= base_url() ?>assets/img/logo2-removebg-preview.png" alt="logo" width="150px" height="30px">
               <ul class="list-unstyled mb-md-4 mb-lg-0 mt-3">
                 <li class="lh-lg"><a class="text-white text-decoration-none footer_text" href="#!">Tentang Kami</a></li>
                 <li class="lh-lg"><a class="text-white text-decoration-none footer_text" href="#!">Affiliasi</a></li>
@@ -136,16 +137,16 @@
     
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
-	<script src="assets/js/vendor/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="assets/js/jquery.sticky.js"></script>
-	<script src="assets/js/nouislider.min.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/vendor/bootstrap.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.sticky.js"></script>
+	<script src="<?= base_url() ?>assets/js/nouislider.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="assets/js/gmaps.min.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="<?= base_url() ?>assets/js/gmaps.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/main.js"></script>
 	<script src="vendors/@popperassets/js/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
@@ -154,7 +155,7 @@
     <script>
       feather.replace();
     </script>
-    <script src="assets/js/theme.js"></script>
+    <script src="<?= base_url() ?>assets/js/theme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 </body>

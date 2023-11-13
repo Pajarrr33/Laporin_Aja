@@ -136,11 +136,11 @@ class Auth extends BaseController
                     ]);
                     if($petugas['level'] == 'admin')
                     {
-                        return redirect()->to('/admin');
+                        return redirect()->to('/admin/dashboard');
                     }
                     else
                     {
-                        return redirect()->to('/petugas');
+                        return redirect()->to('/petugas/dashboard');
                     }
             }
         }

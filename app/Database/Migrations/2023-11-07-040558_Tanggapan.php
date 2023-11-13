@@ -17,21 +17,22 @@ class Tanggapan extends Migration
              'type' => 'INT',
              'constraint' => 11,
            ],
-         'tanggal_tanggapan' => [
-            'type' => 'DATE',
+           'id_petugas' => [
+            'type' => 'INT',
+            'constraint' => 11,
+         ],
+         'tanggal' => [
+            'type' => 'VARCHAR',
+            'constraint' => 255,
           ],
          'tanggapan' => [
             'type' => 'TEXT',
           ],
-         'status_tanggapan' => [
+         'status' => [
             'type' => 'ENUM',
             'constraint' => array('0','1','2','3','4'),
             'default'=> "0"
         ],
-       'id_petugas' => [
-          'type' => 'INT',
-          'constraint' => 11,
-          ],
       ]);
    
       $this->forge->addPrimaryKey('id_tanggapan');

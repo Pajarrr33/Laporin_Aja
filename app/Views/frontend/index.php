@@ -31,7 +31,7 @@
                     </svg>
                 </button>
 
-                <div class="hidden lg:flex lg:space-x-10">
+                <div class="hidden lg:block lg:space-x-10">
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Services</a>
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">About</a>
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Contact</a>

@@ -19,13 +19,8 @@ class Home extends BaseController
         return view('frontend/login');
     }
 
-    public function laporan()
+    public function dashboard()
     {
-        return view('frontend/laporan');
-    }
-
-    public function user()
-    {
-        return view('frontend/user');
+        return view('admin/index');
     }
 }

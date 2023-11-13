@@ -13,17 +13,25 @@ class Pengaduan extends Migration
              'type' => 'INT',
              'auto_increment' => true,
            ],
-          'tanggal_pengaduan' => [
-             'type' => 'DATETIME',
+           'id_masyrakat' => [
+             'type' => 'INT',
+             'constraint' => 11,
            ],
-          'nik' => [
+           'judul' => [
+             'type' => 'VARCHAR',
+             'constraint' => '225',
+           ],
+           'nik' => [
              'type' => 'VARCHAR',
              'constraint' => 16,
+           ],
+           'tanggal_pengaduan' => [
+             'type' => 'DATETIME',
            ],
           'isi_pengaduan' => [
                'type' => 'TEXT',
            ],
-          'foto' => [
+          'img' => [
              'type' => 'VARCHAR',
              'constraint' => 120,
            ],
