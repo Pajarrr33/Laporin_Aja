@@ -788,6 +788,14 @@ video {
   margin-top: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.me-1 {
+  margin-inline-end: 0.25rem;
+}
+
 .block {
   display: block;
 }

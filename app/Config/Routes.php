@@ -29,5 +29,6 @@ $routes->get('/auth/logout', 'Auth::logout');
 $routes->get('/masyarakat', 'Masyarakat::dashboard');
 $routes->get('/admin', 'Admin::index');
 
-$routes->get('/masyarakat/pengaduan/lihat', 'Masyarakat::lihat');
-$routes->get('/masyarakat/pengaduan/new', 'Masyarakat::new');
+$routes->get('/masyarakat/lihat', 'Masyarakat::lihat');
+$routes->get('/masyarakat/new', 'Masyarakat::new');
+$routes->post('/pengaduan/save', 'Pengaduan::save');
