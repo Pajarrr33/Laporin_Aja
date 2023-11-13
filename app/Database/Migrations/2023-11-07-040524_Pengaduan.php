@@ -13,33 +13,30 @@ class Pengaduan extends Migration
              'type' => 'INT',
              'auto_increment' => true,
            ],
-           'id_masyrakat' => [
+           'id_masyarakat' => [
              'type' => 'INT',
              'constraint' => 11,
            ],
            'judul' => [
              'type' => 'VARCHAR',
-             'constraint' => '225',
+             'constraint' => '128',
            ],
-           'nik' => [
-             'type' => 'VARCHAR',
-             'constraint' => 16,
-           ],
-           'tanggal_pengaduan' => [
+           'isi' => [
+            'type' => 'TEXT',
+            ],
+          'img' => [
+              'type' => 'VARCHAR',
+              'constraint' => 120,
+            ],
+           'tanggal' => [
              'type' => 'DATETIME',
            ],
-          'isi_pengaduan' => [
-               'type' => 'TEXT',
-           ],
-          'img' => [
-             'type' => 'VARCHAR',
-             'constraint' => 120,
-           ],
-          'status_pengaduan' => [
-             'type' => 'ENUM',
-             'constraint' => array('0','1','2','3','4'),
-             'default'=> "0"
-           ],
+          
+            'status' => [
+              'type' => 'ENUM',
+              'constraint' => array('0','1','2','3','4'),
+              'default'=> "0"
+            ],
        ]);
     
        $this->forge->addPrimaryKey('id_pengaduan');

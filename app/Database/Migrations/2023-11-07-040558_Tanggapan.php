@@ -28,11 +28,10 @@ class Tanggapan extends Migration
          'tanggapan' => [
             'type' => 'TEXT',
           ],
-         'status' => [
-            'type' => 'ENUM',
-            'constraint' => array('0','1','2','3','4'),
-            'default'=> "0"
-        ],
+         'tanggal' => [
+            'type' => 'VARCHAR',
+            'constraint' => 128,
+         ]
       ]);
    
       $this->forge->addPrimaryKey('id_tanggapan');
