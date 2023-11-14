@@ -18,9 +18,12 @@ $routes->post('/tulis_pengaduan/(:any)','Pengaduan::update_pengaduan/$1');
 
 $routes->get('/admin/dashboard/','Home::dashboard');
 $routes->get('/admin/pengaduan/','Pengaduan::list_pengaduan');
+$routes->get('/admin/pengaduan/(:any)','Pengaduan::pengaduan_satuan/$1');
 $routes->get('/terima_pengaduan/(:any)','Pengaduan::terima_pengaduan/$1');
 $routes->get('/tolak_pengaduan/(:any)','Pengaduan::tolak_pengaduan/$1');
 
+$routes->post('/tambah_tanggapan/(:any)','Tanggapan::tambah_tanggapan/$1');
+$routes->post('/update_tanggapan/(:any)','Tanggapan::update_tanggapan/$1');
 
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/valid_login', 'Admin::valid_login');

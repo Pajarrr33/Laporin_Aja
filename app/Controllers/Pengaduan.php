@@ -10,7 +10,7 @@ class Pengaduan extends BaseController
     {
         $this->PengaduanModel = new \App\Models\PengaduanModel();
         $this->TanggapanModel = new \App\Models\TanggapanModel();
-
+        $this->MasyarakatModel = new \App\Models\MasyarakatModel();
         //meload validation
         $this->validation = \Config\Services::validation();
 
@@ -25,7 +25,7 @@ class Pengaduan extends BaseController
     
     public function update($id = null)
     {
-        $pengaduan = $this->PengaduanModel->where("id_masyarakat",$this->session->get('id'))->first();
+        $pengaduan = $this->PengaduanModel->where("id_pengaduan",$id)->first();
         $data = array(
             "pengaduan" => $pengaduan
         );
@@ -149,6 +149,19 @@ class Pengaduan extends BaseController
             "tanggapan" => $tanggapan,
         );
         return view('admin/list_pengaduan',$data);
+    }
+
+    public function pengaduan_satuan($id = null)
+    {
+        $pengaduan = $this->PengaduanModel->where('id_pengaduan',$id)->first();
+        $masyrakat = $this->MasyarakatModel->where('id_masyarakat',$pengaduan['id_masyarakat'])->first();
+        $tanggapan = $this->TanggapanModel->where('id_pengaduan',$pengaduan['id_pengaduan'])->orderBy('id_tanggapan','desc')->findAll();
+        $data = array(
+            "pengaduan" => $pengaduan,
+            "tanggapan" => $tanggapan,
+            "masyarakat"=> $masyrakat,
+        );
+        return view('admin/pengaduan_satuan',$data);
     }
 
     public function terima_pengaduan($id = null)

@@ -43,4 +43,10 @@ class TanggapanModel extends Model
         $query = $this->db->table($this->table)->insert($data);
         return $query;
     }
+
+    public function update_data($data = null,$id = null)
+    {
+        $query = $this->db->table($this->table)->where('id_tanggapan', $id)->update($data);
+        return $query ;
+    }
 }

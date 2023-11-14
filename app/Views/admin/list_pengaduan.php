@@ -15,6 +15,7 @@
             </thead>
             <tbody>
                 <?php $no = 1; foreach($pengaduan as $p) : ?>
+                <a href="/admin/pengaduan/<?= $p['id_pengaduan'] ?>">
                 <tr>
                     <th scope="row"><?= $no++ ?></th>
                     <td><?= $p['judul'] ?></td>
@@ -43,14 +44,16 @@
                         <?php endif; ?>
                     </td>
                     <td>
+                        <a href="/admin/pengaduan/<?= $p['id_pengaduan'] ?>" class="btn btn-outline-info"><i class="bi bi-search"></i></a>
                         <?php if($p['status'] == 0 ) :?>
                         <a href="/terima_pengaduan/<?= $p['id_pengaduan'] ?>" class="btn btn-outline-success"><i class="bi bi-check2"></i></a>
                         <a href="/tolak_pengaduan/<?= $p['id_pengaduan'] ?>" class="btn btn-outline-danger"><i class="bi bi-x-lg"></i></a>
                         <?php elseif($p['status'] == 1 || $p['status'] == 2) :?>
-                        <a href="#" class="btn btn-outline-primary">Beri Tanggapan</a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-chat"></i></a>
                         <?php endif ; ?>
                     </td>
                 </tr>
+                </a>
                 <?php endforeach; ?>
             </tbody>
         </table>
