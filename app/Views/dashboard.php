@@ -99,7 +99,7 @@
                     <li><a href="#">Manage Admin / Staff account</a>
                         <ul>
                             <li><a href="buttons.html">List Account</a></li>
-                            <li><a href="dropdown.html">Tambah akun</a></li>
+                            <li><a href="/admin/tambahakun">Tambah akun</a></li>
                             <li><a href="Badges.html">Update Akun</a></li>
                         </ul>
                     </li>
