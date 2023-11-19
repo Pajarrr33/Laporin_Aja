@@ -118,7 +118,7 @@
                     <h4><b>B. Deskripsi Laporan</b></h4>
                     <img src="/upload/<?= $pengaduan['img'] ?>" alt="bukti" width="100%" style="object-fit:contain;">
                     <h6 class="mt-3">
-                    <?php 
+                        <?php 
                     // Assuming $pengaduan['isi'] contains HTML
                     $html = $pengaduan['isi'];
 
@@ -137,14 +137,19 @@
                             <h4><b>C. Timeline Laporan</b></h3>
                         </div>
                         <div class="d-flex">
-                            <button type="button" class="tambah_tanggapan"><i class="bi bi-plus-lg"></i></button>
-                            <button type="button" class="tutup_tanggapan d-none"><i class="bi bi-x-lg"></i></button>
+                            <button type="button" class="tambah_tanggapan btn btn-outline-success"><i
+                                    class="bi bi-plus-lg"></i></button>
+                            <button type="button" class="tutup_tanggapan btn btn-outline-danger d-none"><i
+                                    class="bi bi-x-lg"></i></button>
                             <?php foreach($tanggapan as $t) : ?>
-                            <button type="button" class="tutup_tanggapan_edit<?= $t['id_tanggapan'] ?> d-none"><i class="bi bi-x-lg"></i></button>
+                            <button type="button"
+                                class="tutup_tanggapan_edit<?= $t['id_tanggapan'] ?> btn btn-outline-danger d-none"><i
+                                    class="bi bi-x-lg"></i></button>
                             <?php endforeach; ?>
                         </div>
                     </div>
-                    <form action="/tambah_tanggapan/<?= $pengaduan['id_pengaduan'] ?>" method="post" class="d-none tanggapan mt-3 format_tanggapan">
+                    <form action="/admin/tambah_tanggapan/<?= $pengaduan['id_pengaduan'] ?>" method="post"
+                        class="d-none tanggapan mt-3 format_tanggapan">
                         <textarea name="tanggapan" id="isi" cols="30" rows="10"
                             placeholder="Masukan tanggapan anda"></textarea>
                         <div class="d-flex justify-content-between">
@@ -156,26 +161,30 @@
                         </div>
                     </form>
                     <?php $i = 1; foreach($tanggapan as $t) : ?>
-                    <div class="d-flex align-items-center mt-3">
-                        <div class="d-flex tanggapan_satuan<?= $t['id_tanggapan'] ?> align-items-center">
-                            <?php if($i == 1) : ?>
-                            <div class="d-inline-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill" viewBox="0 0 16 16" style="color:orange">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>
-                            </div>
-                            <?php elseif($i > 1) : ?>
-                            <div class="d-inline-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill" viewBox="0 0 16 16" style="color:gray">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>
-                            </div>
-                            <?php endif ; ?>
-                            <div class="d-inline-block">
-                                    <h6 class="tanggapan_terdahulu<?= $t['id_tanggapan'] ?>">
-                                    <?php 
+                    <div class="mt-3">
+                        <div class="tanggapan_satuan<?= $t['id_tanggapan'] ?>">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <?php if($i == 1) : ?>
+                                    <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16"
+                                            style="color:orange">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                    </div>
+                                    <?php elseif($i > 1) : ?>
+                                    <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16"
+                                            style="color:gray">
+                                            <circle cx="8" cy="8" r="8" />
+                                        </svg>
+                                    </div>
+                                    <?php endif ; ?>
+                                    <div class="d-inline-block">
+                                        <h6 class="tanggapan_terdahulu<?= $t['id_tanggapan'] ?>">
+                                            <?php 
                                     // Assuming $pengaduan['isi'] contains HTML
                                     $html = $t['tanggapan'];
 
@@ -186,11 +195,16 @@
                                     // Display the modified content
                                     echo $htmlWithoutPTags ;
                                     ?>
-                                    </h6>
-                                    <p><?= $t['tanggal'] ?></p>
+                                        </h6>
+                                        <p><?= $t['tanggal'] ?></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="/admin/delete_tanggapan/<?= $t['id_tanggapan'] ?>" class="btn"><i class="bi bi-trash3"></i></a>
+                                </div>
                             </div>
                         </div>
-                        <form action="/update_tanggapan/<?= $t['id_tanggapan'] ?>" method="post"
+                        <form action="/admin/update_tanggapan/<?= $t['id_tanggapan'] ?>" method="post"
                             class="d-none edit_tanggapan<?= $t['id_tanggapan'] ?> mt-3 format_tanggapan">
                             <textarea name="tanggapan" id="edit_tanggapan<?= $t['id_tanggapan'] ?>" cols="30" rows="10"
                                 placeholder="Masukan tanggapan anda"><?= $t['tanggapan'] ?></textarea>
@@ -228,26 +242,26 @@ ClassicEditor
         console.error(error);
     });
 
-    var isTanggapanClickable = true;
+var isTanggapanClickable = true;
 
-    $(".tanggapan_terdahulu<?= $t['id_tanggapan'] ?>").on("dblclick", function() {
-        if (isTanggapanClickable) {
-            $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
-            $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").addClass("d-none");
-            $(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").removeClass("d-none");
-            $(".tambah_tanggapan").addClass("d-none");
-            $(".tutup_tanggapan").addClass("d-none");
-            isTanggapanClickable = false; // Disable all tanggapan_terdahulu elements
-        }
-    });
+$(".tanggapan_terdahulu<?= $t['id_tanggapan'] ?>").on("dblclick", function() {
+    if (isTanggapanClickable) {
+        $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
+        $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").addClass("d-none");
+        $(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").removeClass("d-none");
+        $(".tambah_tanggapan").addClass("d-none");
+        $(".tutup_tanggapan").addClass("d-none");
+        isTanggapanClickable = false; // Disable all tanggapan_terdahulu elements
+    }
+});
 
-    $(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").on("click", function() {
-        $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").addClass("d-none");
-        $(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").addClass("d-none");
-        $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
-        $(".tambah_tanggapan").removeClass("d-none");
-        isTanggapanClickable = true; // Enable all tanggapan_terdahulu elements
-    });
+$(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").on("click", function() {
+    $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").addClass("d-none");
+    $(".tutup_tanggapan_edit<?= $t['id_tanggapan'] ?>").addClass("d-none");
+    $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
+    $(".tambah_tanggapan").removeClass("d-none");
+    isTanggapanClickable = true; // Enable all tanggapan_terdahulu elements
+});
 
 <?php endforeach ; ?>
 
@@ -259,8 +273,8 @@ $(".tambah_tanggapan").on("click", function() {
     $(".tutup_tanggapan").removeClass("d-none");
 
     <?php foreach($tanggapan as $t) : ?>
-        $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").addClass("d-none");
-        $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
+    $(".edit_tanggapan<?= $t['id_tanggapan'] ?>").addClass("d-none");
+    $(".tanggapan_satuan<?= $t['id_tanggapan'] ?>").removeClass("d-none");
     <?php endforeach; ?>
 });
 
@@ -270,7 +284,6 @@ $(".tutup_tanggapan").on("click", function() {
     $(".tambah_tanggapan").removeClass("d-none");
     $(".tutup_tanggapan").addClass("d-none");
 });
-
 </script>
 
 <?= $this->endSection() ?>

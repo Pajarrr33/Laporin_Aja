@@ -82,59 +82,108 @@ class Pengaduan extends BaseController
 
     public function update_pengaduan($id = null)
     {
+        $pengaduan = $this->PengaduanModel->where("id_pengaduan",$id)->first();
+
         if($id != null)
         {
-            $pengaduan = $this->PengaduanModel->where("id_pengaduan",$id)->first();
-            $pengaduanUpdate = $this->request->getPost();
-
-            if($pengaduanUpdate)
+            if($pengaduan['status'] == '0') 
             {
-                $validation = $this->validate([
-                    'judul' => 'required',
-                    'isi'   => 'required',
-                    'img'   => 'uploaded[img]|mime_in[img,image/jpg,image/jpeg,image/gif,image/png]'
-                ]);
+                $pengaduanUpdate = $this->request->getPost();
 
-                if($validation = true)
+                if($pengaduanUpdate)
                 {
-                    if($this->request->getFile('img')->isValid())
+                    $validation = $this->validate([
+                        'judul' => 'required',
+                        'isi'   => 'required',
+                        'img'   => 'uploaded[img]|mime_in[img,image/jpg,image/jpeg,image/gif,image/png]'
+                    ]);
+
+                    if($validation = true)
                     {
-                        if(!empty($pengaduan['img']))
+                        if($this->request->getFile('img')->isValid())
                         {
-                            unlink(ROOTPATH . 'public/upload/' . $pengaduan['img']);
+                            if(!empty($pengaduan['img']))
+                            {
+                                unlink(ROOTPATH . 'public/upload/' . $pengaduan['img']);
+                            }
+
+                            $upload = $this->request->getFile('img');
+                            $upload->move(ROOTPATH . 'public/upload/');
+                            $img = $upload->getName();
+                        }
+                        else
+                        {
+                            $img = $pengaduan['img'];
                         }
 
-                        $upload = $this->request->getFile('img');
-                        $upload->move(ROOTPATH . 'public/upload/');
-                        $img = $upload->getName();
+                        $data = array(
+                            'judul' => $pengaduanUpdate['judul'],
+                            'isi' => $pengaduanUpdate['isi'],
+                            'img' => $img,
+                        );
+
+                        $this->PengaduanModel->update_data($id,$data);
+                        return redirect()->to('/user');
                     }
                     else
                     {
-                        $img = $pengaduan['img'];
+                        return redirect()->to('/user');
                     }
-
-                    $data = array(
-                        'judul' => $pengaduanUpdate['judul'],
-                        'isi' => $pengaduanUpdate['isi'],
-                        'img' => $img,
-                    );
-
-                    $this->PengaduanModel->update_data($id,$data);
-                    return redirect()->to('/');
                 }
                 else
                 {
-                    return redirect()->to('/update_pengaduan/' . $id);
+                    $this->session->setFlashdata('pesan','<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Anda Mengubah isi pengaduan ini karena sudah diverifikasi oleh petugas
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>');
+                    return redirect()->to('/user');
                 }
             }
             else
             {
-                return redirect()->to('/update_pengaduan/' . $id);
+                return redirect()->to('/user');
             }
         }
         else
         {
-            return redirect()->to('/');
+            return redirect()->to('/user');
+        }
+    }
+
+    public function delete_pengaduan($id = null)
+    {
+        if($id)
+        {
+            $pengaduan = $this->PengaduanModel->where("id_pengaduan",$id)->first();
+            if($pengaduan['status'] == '0') 
+            {
+                $tanggapan = $this->TanggapanModel->where("id_pengaduan",$id)->findAll();
+                if($pengaduan['img'])
+                {
+                    unlink(ROOTPATH . 'public/upload/' . $pengaduan['img']);
+                }
+                foreach($tanggapan as $t) {
+                    $this->TanggapanModel->delete($t['id_tanggapan']);
+                }
+                $this->PengaduanModel->delete($id);
+                return redirect()->to('/user');
+            }
+            else
+            {
+                $this->session->setFlashdata('pesan','<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Anda Tidak bisa menghapus pengaduan ini karena sudah diverifikasi oleh petugas
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>');
+                return redirect()->to('/user');
+            }
+        }
+        else
+        {
+            return redirect()->to('/user');
         }
     }
 
@@ -168,10 +217,18 @@ class Pengaduan extends BaseController
     {
         if($id != null)
         {
+            date_default_timezone_set('Asia/Jakarta');
             $data = array(
                 'status' => '1'
             );
             $this->PengaduanModel->update_data($id,$data);
+            $tanggapan_data = array(
+                'id_pengaduan' => $id,
+                'id_petugas' => $this->session->get('id'),
+                'tanggapan' => 'Pengaduan telah diverifikasi',
+                'tanggal' => date("l j F H:i"),
+            );
+            $this->TanggapanModel->create($tanggapan_data);
             return redirect()->to('/admin/pengaduan/');
         }
         else
@@ -184,10 +241,18 @@ class Pengaduan extends BaseController
     {
         if($id != null)
         {
+            date_default_timezone_set('Asia/Jakarta');
             $data = array(
                 'status' => '4'
             );
             $this->PengaduanModel->update_data($id,$data);
+            $tanggapan_data = array(
+                'id_pengaduan' => $id,
+                'id_petugas' => $this->session->get('id'),
+                'tanggapan' => $this->request->getPost('tanggapan'),
+                'tanggal' => date("l j F H:i"),
+            );
+            $this->TanggapanModel->create($tanggapan_data);
             return redirect()->to('/admin/pengaduan/');
         }
         else

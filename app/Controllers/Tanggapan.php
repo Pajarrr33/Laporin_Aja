@@ -97,4 +97,17 @@ class Tanggapan extends BaseController
             return redirect()->to('/');
         }
     }
+
+    public function delete_tanggapan($id = null)
+    {
+        if($id)
+        {
+            $this->TanggapanModel->delete($id);
+            return redirect()->to('/');
+        }
+        else
+        {
+            return redirect()->to('/');
+        }
+    }
 }

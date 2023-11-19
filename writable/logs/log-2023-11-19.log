@@ -1,0 +1,344 @@
+INFO - 2023-11-19 06:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-19 06:13:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'laporin_aja', 3306, '', 0)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Laporin-Aja\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Laporin-Aja\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Laporin-Aja\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Laporin-Aja\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Laporin-Aja\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Laporin-Aja\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Laporin-Aja\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Laporin-Aja\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Laporin-Aja\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Laporin-Aja\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-19 06:13:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengaduan`
+WHERE `id_masyarakat` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-19 06:13:31 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'laporin_aja', 3306, '', 0)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Laporin-Aja\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Laporin-Aja\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Laporin-Aja\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Laporin-Aja\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Laporin-Aja\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Laporin-Aja\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Laporin-Aja\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Laporin-Aja\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Laporin-Aja\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Laporin-Aja\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-19 06:13:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengaduan`
+WHERE `id_masyarakat` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:42:44 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\frontend\user.php on line 54.
+ 1 APPPATH\Views\frontend\user.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/user', [], true)
+ 5 APPPATH\Controllers\User.php(25): view('frontend/user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:43:31 --> Undefined array key "pesan"
+in APPPATH\Views\frontend\user.php on line 54.
+ 1 APPPATH\Views\frontend\user.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/user', [], true)
+ 5 APPPATH\Controllers\User.php(25): view('frontend/user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:45:21 --> Undefined array key "pesan"
+in APPPATH\Views\frontend\user.php on line 54.
+ 1 APPPATH\Views\frontend\user.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/user', [], true)
+ 5 APPPATH\Controllers\User.php(25): view('frontend/user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:45:23 --> Undefined array key "pesan"
+in APPPATH\Views\frontend\user.php on line 54.
+ 1 APPPATH\Views\frontend\user.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/user', [], true)
+ 5 APPPATH\Controllers\User.php(25): view('frontend/user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:51:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', '@popperassets', 'js', 'popper.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:51:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'bootstrap', 'bootstrap.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:51:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'is', 'is.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:51:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'feather-icons', 'feather.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:53:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', '@popperassets', 'js', 'popper.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:53:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'bootstrap', 'bootstrap.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:53:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'is', 'is.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-19 06:53:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(32): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'feather-icons', 'feather.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-11-19 06:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 06:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-19 07:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

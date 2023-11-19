@@ -51,6 +51,10 @@
                         </div>
                     </div>
                     <div>
+                        <?php $pesan = session()->getFlashdata('pesan'); 
+                        if($pesan != null) { 
+                            echo $pesan;
+                        }?>
                         <table class="table mx-2">
                             <thead>
                                 <tr>
@@ -58,7 +62,6 @@
                                     <th scope="col">Judul</th>
                                     <th scope="col">Tanggal</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Tanggapan</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -81,14 +84,10 @@
                                         Ditolak
                                         <?php endif; ?>
                                     </td>
-                                    <?php foreach($tanggapan as $t) :?>
                                     <td>
-                                        <?php if($t['id_pengaduan'] == $p['id_pengaduan']) { echo $t['tanggapan']; } else { continue; }?>
+                                        <a href="/update_pengaduan/<?= $p['id_pengaduan'] ?>"  class="btn btn-primary">Update</a>
+                                        <a href="/hapus_pengaduan/<?= $p['id_pengaduan'] ?>"  class="btn btn-primary">Delete</a>
                                     </td>
-                                    <td>
-                                        <a href="/update_pengaduan/<?= $p['id_pengaduan'] ?>"  class="btn btn-primary">update_pengaduan</a>
-                                    </td>
-                                    <?php endforeach; ?>
                                 </tr>
                                 <?php endforeach; ?>
                             </tbody>
