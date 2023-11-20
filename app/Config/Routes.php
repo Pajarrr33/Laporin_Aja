@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+
 $routes->get('/','Home::index');
 $routes->get('/login','Home::login');
 $routes->get('/register','Home::register');
@@ -28,6 +29,9 @@ $routes->post('/admin/tolak_pengaduan/(:any)','Pengaduan::tolak_pengaduan/$1');
 $routes->post('/admin/tambah_tanggapan/(:any)','Tanggapan::tambah_tanggapan/$1');
 $routes->post('/admin/update_tanggapan/(:any)','Tanggapan::update_tanggapan/$1');
 $routes->get('/admin/delete_tanggapan/(:any)' ,'Tanggapan::delete_tanggapan/$1');
+
+$routes->get('/admin/Laporan_Pengaduan/','Laporan::index');
+$routes->post('/admin/BuatLaporan/','Laporan::Laporan');
 
 $routes->get('/admin/tambahakun','Aturakun::tambahPetugas');
 $routes->get('/admin/login', 'Admin::login');

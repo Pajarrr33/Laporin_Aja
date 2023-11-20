@@ -29,8 +29,17 @@ class Pengaduan extends Migration
               'constraint' => 120,
             ],
            'tanggal' => [
-             'type' => 'DATETIME',
+             'type' => 'VARCHAR',
+             'constraint' => 256,
            ],
+           'tanggal_filter' => [
+            'type' => 'DATE',
+          ],
+          'tanggal_selesai' => [
+            'type' => 'VARCHAR',
+            'constraint' => 256,
+            'default' => "-",
+          ],
           
             'status' => [
               'type' => 'ENUM',

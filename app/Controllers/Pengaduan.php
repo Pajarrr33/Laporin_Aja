@@ -54,7 +54,8 @@ class Pengaduan extends BaseController
                     'judul' => $pengaduan['judul'],
                     'isi' => $pengaduan['isi'],
                     'img' => $img,
-                    'tanggal' => date("l j F H:i"),
+                    'tanggal' => date("l j F Y H:i"),
+                    'tanggal_filter' => date('Y-m-d'),
                     'status' => '0',
                 );
                 $this->PengaduanModel->create($data);
@@ -64,7 +65,7 @@ class Pengaduan extends BaseController
                         'id_pengaduan' => $id_pengaduan,
                         'id_petugas' => 0,
                         'tanggapan' => 'Pengaduan telah diterima',
-                        'tanggal' => date("l j F H:i"),
+                        'tanggal' => date("l j F Y H:i"),
                     );
                     $this->TanggapanModel->create($tanggapan_data);
                     return redirect()->to('/');
@@ -226,7 +227,7 @@ class Pengaduan extends BaseController
                 'id_pengaduan' => $id,
                 'id_petugas' => $this->session->get('id'),
                 'tanggapan' => 'Pengaduan telah diverifikasi',
-                'tanggal' => date("l j F H:i"),
+                'tanggal' => date("l j F Y H:i"),
             );
             $this->TanggapanModel->create($tanggapan_data);
             return redirect()->to('/admin/pengaduan/');
@@ -250,7 +251,7 @@ class Pengaduan extends BaseController
                 'id_pengaduan' => $id,
                 'id_petugas' => $this->session->get('id'),
                 'tanggapan' => $this->request->getPost('tanggapan'),
-                'tanggal' => date("l j F H:i"),
+                'tanggal' => date("l j F Y H:i"),
             );
             $this->TanggapanModel->create($tanggapan_data);
             return redirect()->to('/admin/pengaduan/');

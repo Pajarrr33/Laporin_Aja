@@ -39,7 +39,7 @@ class Tanggapan extends BaseController
                         'id_pengaduan' => $id_pengaduan,
                         'id_petugas' => $this->session->get('id'),
                         'tanggapan' => $tanggapan['tanggapan'],
-                        'tanggal' => date("l j F H:i")
+                        'tanggal' => date("l j F Y H:i")
                     );
                     $this->TanggapanModel->create($data);
                     return redirect()->to('/');
@@ -77,7 +77,7 @@ class Tanggapan extends BaseController
                     $data = array(
                         'id_petugas' => $this->session->get('id'),
                         'tanggapan' => $tanggapan['tanggapan'],
-                        'tanggal' => date("l j F H:i")
+                        'tanggal' => date("l j F Y H:i")
                     );
                     $this->TanggapanModel->update_data($data,$id_tanggapan);
                     return redirect()->to('/');

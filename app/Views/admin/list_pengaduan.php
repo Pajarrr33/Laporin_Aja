@@ -3,6 +3,16 @@
 <?= $this->section('content') ?>
 <div class="main_content_iner ">
     <div class="container-fluid plr_30 body_white_bg pt_30">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <h3>List Pengaduan</h3>
+            </div>
+            <div class="d-flex">
+                <a class="btn btn-outline-primary" href="/admin/Laporan_Pengaduan/">
+                    <i class="bi bi-printer"></i>
+                </a>
+            </div>
+        </div>
         <table class="table" id="myTable">
             <thead class="thead-dark">
                 <tr>
