@@ -33,6 +33,11 @@ $routes->get('/admin/delete_tanggapan/(:any)' ,'Tanggapan::delete_tanggapan/$1')
 $routes->get('/admin/Laporan_Pengaduan/','Laporan::index');
 $routes->post('/admin/BuatLaporan/','Laporan::Laporan');
 
+$routes->get('/admin/access_menu','Admin::access_menu');
+$routes->post('/admin/tambah_access_menu','Admin::tambah_access');
+$routes->post('/admin/update_access_menu/(:any)','Admin::update_access/$1');
+$routes->get('/admin/delete_access_menu/(:any)','Admin::delete_access/$1');
+
 $routes->get('/admin/tambahakun','Aturakun::tambahPetugas');
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/valid_login', 'Admin::valid_login');
@@ -48,3 +53,5 @@ $routes->get('/admin', 'Admin::index');
 $routes->get('/masyarakat/lihat', 'Masyarakat::lihat');
 $routes->get('/masyarakat/new', 'Masyarakat::new');
 $routes->post('/pengaduan/save', 'Pengaduan::save');
+
+$routes->get('/blocked','Blocked::index');

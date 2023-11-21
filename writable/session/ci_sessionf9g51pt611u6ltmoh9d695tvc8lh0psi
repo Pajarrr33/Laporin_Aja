@@ -1,0 +1,6 @@
+__ci_last_regenerate|i:1700529434;_ci_previous_url|s:27:"http://localhost:8080/login";pesan|s:306:"<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Silahkan Login Terlebih Dahulu
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>";__ci_vars|a:1:{s:5:"pesan";s:3:"old";}

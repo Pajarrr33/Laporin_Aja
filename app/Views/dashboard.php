@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Laporin Aja </title>
-    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/img/logo_64x64.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/assets/css/bootstrap1.min.css" />
 
@@ -74,22 +74,12 @@
                     <img src="/assets/img/menu-icon/2.svg" alt>
                     <span>Pengaduan</span>
                 </a>
-                <ul>
-                    <li><a href="/admin/pengaduan/">List Pengaduan</a></li>
-                    <li><a href="resister.html">Tambah Pengaduan</a></li>
-                    <li><a href="forgot_pass.html">Update Pengaduan</a></li>
-                </ul>
             </li>
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
                     <img src="/assets/img/menu-icon/3.svg" alt>
                     <span>Tanggapan</span>
                 </a>
-                <ul>
-                    <li><a href="mail_box.html">List Tanggapan</a></li>
-                    <li><a href="chat.html">Tambah Tanggapan</a></li>
-                    <li><a href="faq.html">Update Tanggapan</a></li>
-                </ul>
             </li>
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
@@ -98,20 +88,18 @@
                 </a>
                 <ul>
                     <li><a href="#">Manage Admin / Staff account</a>
-                        <ul>
-                            <li><a href="buttons.html">List Account</a></li>
-                            <li><a href="/admin/tambahakun">Tambah akun</a></li>
-                            <li><a href="Badges.html">Update Akun</a></li>
-                        </ul>
                     </li>
                     <li><a href="#">Manage Masyarakat Account</a>
-                        <ul>
-                            <li><a href="notification.html">List Account</a></li>
-                            <li><a href="progress.html">Tambah Akun</a></li>
-                            <li><a href="carousel.html">Update Akun</a></li>
-                        </ul>
                     </li>
                 </ul>
+            </li>
+            <li class>
+                <a class="has-arrow" href="/admin/access_menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-universal-access" viewBox="0 0 16 16">
+                        <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9V5.5Z"/>
+                    </svg>
+                    <span>Manage Access</span>
+                </a>
             </li>
         </ul>
     </nav>
@@ -153,7 +141,7 @@
                                     <div class="profile_info_details">
                                         <a href="#">My Profile <i class="ti-user"></i></a>
                                         <a href="#">Settings <i class="ti-settings"></i></a>
-                                        <a href="#">Log Out <i class="ti-shift-left"></i></a>
+                                        <a href="/auth/logout">Log Out <i class="ti-shift-left"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -229,6 +217,8 @@
     <script src="/vendors/apex_chart/bar_active_1.js"></script>
     <script src="/vendors/chartjs/chartjs_active.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </html>

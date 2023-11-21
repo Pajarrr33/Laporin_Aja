@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="shortcut icon" href="/assets/img/logo_64x64.png" type="image/x-icon">
     <title>Laporin Aja</title>
 </head>
 <body>

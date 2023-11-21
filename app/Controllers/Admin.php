@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Adminmenu;
 use App\Models\PetugasModel;
 
 class admin extends BaseController
@@ -13,6 +14,7 @@ class admin extends BaseController
     public function __construct()
     {
         $this->adminModel = new PetugasModel();
+        $this->accessModel = new Adminmenu();
         $this->session = session();
     }
 
@@ -117,6 +119,49 @@ class admin extends BaseController
         //balikan ke halaman login
         $this->session->destroy();
         return redirect()->to('/admin/login');
+    }
+
+    public function access_menu()
+    {
+        $accessMenu = $this->accessModel->findAll();
+        $data = [
+            'accessmenu' => $accessMenu
+        ];
+        return view('admin/access_menu',$data);
+    }
+
+    public function tambah_access()
+    {
+        $data = $this->request->getPost();
+        if($data)
+        {
+            $this->accessModel->insert($data);
+        }
+        return redirect()->to('/admin/access_menu');
+    }
+
+    public function update_access($id = null)
+    {
+        if($id)
+        {
+            $data = $this->request->getPost();
+            if($data)
+            {
+                $this->accessModel->update_data($data,$id);
+            }
+        }
+        
+        return redirect()->to('/admin/access_menu');
+    }
+
+    public function delete_access($id = null)
+    {
+        if($id)
+        {
+            $this->accessModel->delete($id);
+        }
+        
+        return redirect()->to('/admin/access_menu');
     }
 
 }

@@ -140,7 +140,7 @@ class Auth extends BaseController
                     }
                     else
                     {
-                        return redirect()->to('/petugas/dashboard');
+                        return redirect()->to('/admin/dashboard');
                     }
             }
         }
@@ -157,6 +157,6 @@ class Auth extends BaseController
         //hancurkan session 
         //balikan ke halaman login
         $this->session->destroy();
-        return redirect()->to('/auth/login');
+        return redirect()->to('/login');
     }
 }

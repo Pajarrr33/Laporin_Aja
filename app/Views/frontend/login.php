@@ -19,6 +19,7 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>LOGIN</h3>
+						<?= session()->getFlashdata('pesan'); ?>
 						<form class="row login_form" action="/auth/valid_login" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="email" class="form-control" id="name" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username / Email'">
