@@ -87,7 +87,7 @@
                     <span>Manage Account</span>
                 </a>
                 <ul>
-                    <li><a href="#">Manage Admin / Staff account</a>
+                    <li><a href="/admin/petugas">Manage Admin / Staff account</a>
                     </li>
                     <li><a href="#">Manage Masyarakat Account</a>
                     </li>

@@ -107,3 +107,730 @@ INFO - 2023-11-21 04:24:38 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-21 04:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-21 04:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-21 04:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:00:26 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:00:26 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 07:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$PetugasModel is deprecated in APPPATH\Controllers\Auth.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$validation is deprecated in APPPATH\Controllers\Auth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\Auth.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:00:57 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:00:57 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 07:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:12:51 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:12:51 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 07:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:13:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:13:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$PetugasModel is deprecated in APPPATH\Controllers\Auth.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:13:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$validation is deprecated in APPPATH\Controllers\Auth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:13:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\Auth.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 07:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 07:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:20:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:20:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$PetugasModel is deprecated in APPPATH\Controllers\Auth.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:20:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$validation is deprecated in APPPATH\Controllers\Auth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:20:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\Auth.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:22:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$PetugasModel is deprecated in APPPATH\Controllers\Auth.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$validation is deprecated in APPPATH\Controllers\Auth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:22:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\Auth.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$masyarakatModel is deprecated in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$PetugasModel is deprecated in APPPATH\Controllers\Auth.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$validation is deprecated in APPPATH\Controllers\Auth.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\Auth.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:22:37 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:23:28 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:23:28 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:23:32 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:23:32 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:23:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+CRITICAL - 2023-11-21 07:23:32 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Admin.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\admin->managementpetugas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:17 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:17 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:19 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:19 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:20 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:20 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:21 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:21 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:27 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:27 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:35 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:25:35 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:25:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+CRITICAL - 2023-11-21 07:25:35 --> Undefined variable $password
+in APPPATH\Controllers\Admin.php on line 240.
+ 1 APPPATH\Controllers\Admin.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'C:\\xampp\\htdocs\\Laporin_Aja\\app\\Controllers\\Admin.php', 240)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\admin->updatePetugas('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:26:27 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:26:27 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:26:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:11 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:11 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:27:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:17 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:17 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:27:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:29 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:29 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:27:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:27:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:27:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:28:06 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:28:06 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:28:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:26 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:26 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:30:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:31 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:32 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:30:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:41 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:41 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:30:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:42 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:30:42 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:30:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:08 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:08 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/defaultpasspetugas/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:42 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:42 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/edit/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/update/2', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:31:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:32:13 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/delete/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:32:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/petugas/delete/3', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:32:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:32:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$uri is deprecated in APPPATH\Filters\AuthGuard.php on line 14.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+WARNING - 2023-11-21 07:32:14 --> [DEPRECATED] Creation of dynamic property App\Filters\AuthGuard::$Adminmenu is deprecated in APPPATH\Filters\AuthGuard.php on line 15.
+ 1 SYSTEMPATH\Filters\Filters.php(177): App\Filters\AuthGuard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/managementpetugas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
+INFO - 2023-11-21 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-21 07:32:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\admin::$accessModel is deprecated in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin_Aja\\public\\index.php')
