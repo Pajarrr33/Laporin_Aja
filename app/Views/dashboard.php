@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Laporin Aja </title>
+    <title>Laporin Aja - <?= $title ?></title>
     <link rel="shortcut icon" href="/assets/img/logo_64x64.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/assets/css/bootstrap1.min.css" />
@@ -73,12 +73,6 @@
                 <a class="has-arrow" href="/admin/pengaduan/" aria-expanded="false">
                     <img src="/assets/img/menu-icon/2.svg" alt>
                     <span>Pengaduan</span>
-                </a>
-            </li>
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <img src="/assets/img/menu-icon/3.svg" alt>
-                    <span>Tanggapan</span>
                 </a>
             </li>
             <li class>

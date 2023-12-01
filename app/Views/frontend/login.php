@@ -6,7 +6,7 @@
 			<nav aria-label="breadcrumb" class="my-custom-breadcrumb">
 				<ol class="breadcrumb mt-lg-5 pt-lg-2">
 				  <li class="breadcrumb-item"><a href="#"><b style="color: white;">Home</b></a></li>
-				  <li class="breadcrumb-item"><a href="#"><b style="color: white;">Login</b></a></li>
+				  <li class="breadcrumb-item"><a href="#"><b style="color: white;">Masuk</b></a></li>
 				</ol>
 			</nav>			  
 		</div>

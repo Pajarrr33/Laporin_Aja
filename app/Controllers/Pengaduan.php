@@ -197,6 +197,7 @@ class Pengaduan extends BaseController
         $data = array(
             "pengaduan" => $pengaduan,
             "tanggapan" => $tanggapan,
+            "title" => 'List Pengaduan',
         );
         return view('admin/list_pengaduan',$data);
     }
@@ -210,6 +211,7 @@ class Pengaduan extends BaseController
             "pengaduan" => $pengaduan,
             "tanggapan" => $tanggapan,
             "masyarakat"=> $masyrakat,
+            "title" => 'Detail Pengaduan',
         );
         return view('admin/pengaduan_satuan',$data);
     }
@@ -218,6 +220,13 @@ class Pengaduan extends BaseController
     {
         if($id != null)
         {
+            $pengaduan = $this->PengaduanModel->where('id_pengaduan',$id)->first();
+
+            if($pengaduan['status'] != '0')
+            {
+                return redirect()->to('/admin/pengaduan/');
+            }
+
             date_default_timezone_set('Asia/Jakarta');
             $data = array(
                 'status' => '1'
@@ -242,6 +251,13 @@ class Pengaduan extends BaseController
     {
         if($id != null)
         {
+            $pengaduan = $this->PengaduanModel->where('id_pengaduan',$id)->first();
+
+            if($pengaduan['status'] != '0')
+            {
+                return redirect()->to('/admin/pengaduan/');
+            }
+
             date_default_timezone_set('Asia/Jakarta');
             $data = array(
                 'status' => '4'

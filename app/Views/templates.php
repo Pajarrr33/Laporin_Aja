@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS ============================================= -->
+    <link rel="shortcut icon" href="/assets/img/logo_64x64.png" type="image/x-icon">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/linearicons.css">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/themify-icons.css">
@@ -21,7 +22,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
 	<script src="<?= base_url() ?>assets/js/vendor/jquery-2.2.4.min.js"></script>
-    <title>Laporin Aja</title>
+    <title>Laporin Aja - <?= $title ?></title>
 </head>
 <body>
 
@@ -35,10 +36,11 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto ">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">Tentang Kami</a>
+                <a class="nav-link" href="#">Fitur</a>
+                <a class="nav-link" href="#">Hubungi Kami</a>
+                <a class="nav-link" href="#">Buat Laporan</a>
+                <a class="nav-link" href="#">Masuk</a>
             </div>
             </ul>
         </div>
