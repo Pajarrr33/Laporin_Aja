@@ -38,6 +38,13 @@ $routes->post('/admin/tambah_access_menu','Admin::tambah_access');
 $routes->post('/admin/update_access_menu/(:any)','Admin::update_access/$1');
 $routes->get('/admin/delete_access_menu/(:any)','Admin::delete_access/$1');
 
+$routes->get('/admin/managementpetugas', 'Admin::managementpetugas');
+$routes->get('/admin/petugas', 'Admin::managementpetugas');
+$routes->get('/admin/petugas/edit/(:num)', 'Admin::editPetugas/$1');
+$routes->post('/admin/petugas/update/(:num)', 'Admin::updatePetugas/$1');
+$routes->get('/admin/petugas/delete/(:num)', 'Admin::deletePetugas/$1');
+$routes->get('/admin/defaultpasspetugas/(:num)', 'Admin::defaultpassPetugas/$1');
+
 $routes->get('/admin/tambahakun','Aturakun::tambahPetugas');
 $routes->get('/admin/login', 'Admin::login');
 $routes->post('/admin/valid_login', 'Admin::valid_login');
