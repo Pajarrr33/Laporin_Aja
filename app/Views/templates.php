@@ -19,7 +19,9 @@
 	<link rel="stylesheet" href="<?= base_url() ?>plugin/owlcarousel2-2.3.4/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>plugin/owlcarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 	<link href="<?= base_url() ?>assets/css/theme.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="path/to/sweetalert.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
 	<script src="<?= base_url() ?>assets/js/vendor/jquery-2.2.4.min.js"></script>
     <title>Laporin Aja - <?= $title ?></title>
@@ -39,8 +41,12 @@
                 <a class="nav-link" href="#">Tentang Kami</a>
                 <a class="nav-link" href="#">Fitur</a>
                 <a class="nav-link" href="#">Hubungi Kami</a>
-                <a class="nav-link" href="#">Buat Laporan</a>
-                <a class="nav-link" href="#">Masuk</a>
+                <a class="nav-link" href="/pengaduan">Buat Laporan</a>
+                <?php if(!session()->get('isLogin')) : ?>
+                <a class="nav-link" href="/login">Masuk</a>
+                <?php else : ?>
+                <a class="nav-link" href="/logout">Keluar</a>
+                <?php endif ; ?>
             </div>
             </ul>
         </div>

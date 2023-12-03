@@ -20,14 +20,32 @@ class Pengaduan extends BaseController
 
     public function index()
     {
-        return view("frontend/pengaduan");
+        $data = [
+            'title' => 'Buat Pengaduan'
+        ];
+        return view("frontend/pengaduan",$data);
+    }
+
+    public function detail($id = null)
+    {
+        $pengaduan = $this->PengaduanModel->where('id_pengaduan',$id)->first();
+        $masyrakat = $this->MasyarakatModel->where('id_masyarakat',$pengaduan['id_masyarakat'])->first();
+        $tanggapan = $this->TanggapanModel->where('id_pengaduan',$pengaduan['id_pengaduan'])->orderBy('id_tanggapan','desc')->findAll();
+        $data = array(
+            "pengaduan" => $pengaduan,
+            "tanggapan" => $tanggapan,
+            "masyarakat"=> $masyrakat,
+            "title" => 'Detail Pengaduan',
+        );
+        return view("frontend/pengaduan_satuan",$data);
     }
     
     public function update($id = null)
     {
         $pengaduan = $this->PengaduanModel->where("id_pengaduan",$id)->first();
         $data = array(
-            "pengaduan" => $pengaduan
+            "pengaduan" => $pengaduan,
+            'title' => 'Update Pengaduan'
         );
         return view("frontend/update_pengaduan",$data);
     }

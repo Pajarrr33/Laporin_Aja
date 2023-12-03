@@ -64,9 +64,9 @@ class Validation extends BaseConfig
 
     public $tambah_petugas = [
         'nama_petugas' => [
-            'rules' => 'alpha_numeric',
+            'rules' => 'required',
             'errors' => [
-                'alpha_numeric' => 'Username hanya boleh mengandung huruf dan angka',
+                'required' => 'Username Harus diisi',
             ]
         ],
         'username' => [
@@ -105,5 +105,34 @@ class Validation extends BaseConfig
         ]
     ];
 
+    public $update_petugas = [
+        'nama_petugas' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Username Harus diisi',
+            ]
+        ],
+        'username' => [
+            'rules' => 'alpha_numeric|is_unique[petugas.username]',
+            'errors' => [
+                'alpha_numeric' => 'Username hanya boleh mengandung huruf dan angka',
+                'is_unique' => 'Username sudah dipakai'
+            ]
+        ],
+        'email' => [
+            'rules' => 'is_unique[petugas.email]',
+            'errors' => [
+                'is_unique' => 'Email sudah dipakai'
+            ]
+        ],
+        'telepon' => [
+            'rules' => 'numeric|min_length[8]|max_length[13]',
+            'errors' => [
+                'numeric' => 'Nomor telepon hanya boleh mengandung angka',
+                'min_length' => 'Nomor telepon minimal 8 angka',
+                'max_length' => 'Nomor telepon maksimal 13 angka'
+            ]
+        ]
+    ];
 
 }

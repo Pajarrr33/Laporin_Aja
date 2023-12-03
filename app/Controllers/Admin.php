@@ -126,7 +126,8 @@ class admin extends BaseController
     {
         $accessMenu = $this->accessModel->findAll();
         $data = [
-            'accessmenu' => $accessMenu
+            'accessmenu' => $accessMenu,
+            'title' => 'Kelola Akses'
         ];
         return view('admin/access_menu',$data);
     }
@@ -164,110 +165,4 @@ class admin extends BaseController
         
         return redirect()->to('/admin/access_menu');
     }
-
-    public function managementpetugas(): string
-    {
-        $nologin = [
-            'title' => 'Login - Aplikasi Pengaduan Masyarakat'
-        ];
-
-        $petugas = $this->petugasModel->findAll();
-        $data = [
-            'title' => 'Data Akun Admin/Petugas',
-            'petugas' => $petugas
-        ];
-
-        return view('admin/petugas', $data);
-    }
-
-    public function editPetugas($id)
-    {
-        $nologin = [
-            'title' => 'Login - Aplikasi Pengaduan Masyarakat'
-        ];
-
-        $data = [
-            'title' => 'Edit Data Kelahiran',
-            'validation' => \Config\Services::validation(),
-            'petugas' => $this->petugasModel->getPetugas($id)
-        ];
-
-        return view('admin/edit-petugas', $data);
-    }
-
-    public function updatePetugas($id)
-    {
-        $nologin = [
-            'title' => 'Login - Aplikasi Pengaduan Masyarakat'
-        ];
-
-        if (!$this->validate([
-            'nama_petugas' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama Petugas harus diisi'
-                ]
-            ],
-            'username' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Username harus diisi'
-                ]
-            ],
-            'telepon' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Telepon harus diisi'
-                ]
-            ],
-            'level' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Level harus diisi'
-                ]
-            ]
-        ])) {
-            $validation = \Config\Services::validation();
-            session()->setFlashdata('vall', $validation->listErrors());
-
-            return redirect()->back()->withInput()->with('validation', $validation);
-        }
-
-        $this->petugasModel->save([
-            "id_petugas" => $id,
-            "nama_petugas" => $this->request->getVar('nama_petugas'),
-            "username" => $this->request->getVar('username'),
-            "telepon" => $this->request->getVar('telepon'),
-            "level" => $this->request->getVar('level'),
-        ]);
-        session()->setFlashdata('pesan', 'Data berhasil diedit.');
-        return redirect()->to('/admin/managementpetugas');
-    }
-
-    public function deletePetugas($id)
-    {
-        $nologin = [
-            'title' => 'Login - Aplikasi Pengaduan Masyarakat'
-        ];
-
-        $this->petugasModel->delete($id);
-        session()->setFlashdata('pesan', 'Data berhasil dihapus.');
-        return redirect()->to('/admin/managementpetugas');
-    }
-
-    public function defaultpassPetugas($id)
-    {
-        $nologin = [
-            'title' => 'Login - Aplikasi Pengaduan Masyarakat'
-        ];
-
-        $default = 'defaultpassword';
-        $this->petugasModel->save([
-            "id_petugas" => $id,
-            "password" => md5($default),
-        ]);
-        session()->setFlashdata('pesan', 'Password berhasil diubah ke default.');
-        return redirect()->to('/admin/managementpetugas');
-    }
-
 }

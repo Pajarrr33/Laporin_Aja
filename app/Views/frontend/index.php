@@ -36,8 +36,12 @@
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Tentang Kami</a>
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Fitur</a>
                     <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Hubungi Kami</a>
-                    <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Buat Laporan</a>
-                    <a href="#" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Masuk</a>
+                    <a href="/pengaduan" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Buat Laporan</a>
+                    <?php if(!session()->get('isLogin')) : ?>
+                    <a href="/login" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Masuk</a>
+                    <?php else : ?>
+                    <a href="/logout" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Keluar</a>  
+                    <?php endif ; ?>
                 </div>
 
             </nav>

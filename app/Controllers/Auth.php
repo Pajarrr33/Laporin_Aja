@@ -97,7 +97,7 @@ class Auth extends BaseController
                         'id' => $masyarakat['id_masyarakat'],
                         'isLogin' => true
                     ]);
-                    return redirect()->to('/');
+                    return redirect()->to('/user');
             }
         } 
         elseif ($masyarakat2) 
@@ -115,7 +115,7 @@ class Auth extends BaseController
                         'id' => $masyarakat2['id_masyarakat'],
                         'isLogin' => true
                     ]);
-                    return redirect()->to('/');
+                    return redirect()->to('/user');
             }
         }
         elseif($petugas)

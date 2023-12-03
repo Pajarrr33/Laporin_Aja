@@ -1,0 +1,1042 @@
+INFO - 2023-12-03 00:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-03 00:00:33 --> mysqli_sql_exception: Unknown column 'id_pengaduan' in 'where clause' in C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Laporin-Aja\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `masyara...', 0)
+#1 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `masyara...')
+#2 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `masyara...')
+#3 C:\xampp\htdocs\Laporin-Aja\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `masyara...', Array, false)
+#4 C:\xampp\htdocs\Laporin-Aja\app\Models\MasyarakatModel.php(16): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\Laporin-Aja\app\Controllers\User.php(64): App\Models\MasyarakatModel->update_data('7', Array)
+#6 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(942): App\Controllers\User->update('7')
+#7 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\Laporin-Aja\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Laporin-Aja\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Laporin-Aja\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-03 00:00:33 --> Unknown column 'id_pengaduan' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `masyarakat` SET `username` = :username:, `email` = :email:, `telepon` = :telepon:, `alamat` = :alamat:, `nik` = :nik:
+WHERE `id_pengaduan` = :id_pengaduan:', [...], false)
+ 2 APPPATH\Models\MasyarakatModel.php(16): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\User.php(64): App\Models\MasyarakatModel->update_data('7', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->update('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:07:24 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\User.php(75): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->delete(null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:07:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\User.php(75): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->delete(null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:09:41 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\User.php(75): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->delete(null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:13:10 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\User.php(75): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->delete(null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:32:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('assets', 'img', 'breadcrumb.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:33:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:34:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:35:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:38:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:38:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:38:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:38:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:38:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:39:59 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:40:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:40:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:40:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:40:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:31 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(50): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('path', 'to', 'sweetalert.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(50): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', '@popperassets', 'js', 'popper.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(50): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'bootstrap', 'bootstrap.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(50): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'is', 'is.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\frontend\update_pengaduan.php on line 16.
+ 1 APPPATH\Views\frontend\update_pengaduan.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\frontend\\update_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('frontend/update_pengaduan', [], true)
+ 5 APPPATH\Controllers\Pengaduan.php(50): view('frontend/update_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->update('vendors', 'feather-icons', 'feather.min.js')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:45:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:45:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', '@popperassets', 'js', 'popper.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:45:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'bootstrap', 'bootstrap.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:45:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'is', 'is.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:45:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 32.
+ 1 APPPATH\Controllers\Pengaduan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->detail('vendors', 'feather-icons', 'feather.min.js')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:47:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 00:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 00:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 00:48:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:09:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:14:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:14:39 --> Call to undefined method App\Controllers\Masyarakat::findAll()
+in APPPATH\Controllers\Aturakun.php on line 176.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:15:44 --> Call to undefined method App\Controllers\Masyarakat::findAll()
+in APPPATH\Controllers\Aturakun.php on line 176.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:17:26 --> Undefined variable $title
+in APPPATH\Views\dashboard.php on line 8.
+ 1 APPPATH\Views\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/masyarakat', [], true)
+ 6 APPPATH\Controllers\Aturakun.php(182): view('admin/masyarakat')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:18:04 --> Undefined variable $title
+in APPPATH\Views\dashboard.php on line 8.
+ 1 APPPATH\Views\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/masyarakat', [], true)
+ 6 APPPATH\Controllers\Aturakun.php(183): view('admin/masyarakat')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:18:08 --> Undefined variable $title
+in APPPATH\Views\dashboard.php on line 8.
+ 1 APPPATH\Views\dashboard.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/masyarakat', [], true)
+ 6 APPPATH\Controllers\Aturakun.php(183): view('admin/masyarakat')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:19:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:20:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Pengaduan.php on line 226.
+ 1 APPPATH\Controllers\Pengaduan.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Controllers\\Pengaduan.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Pengaduan->pengaduan_satuan('path', 'to', 'sweetalert.css')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaduan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-03 01:28:31 --> Undefined variable $p
+in APPPATH\Views\admin\masyarakat.php on line 32.
+ 1 APPPATH\Views\admin\masyarakat.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\admin\\masyarakat.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Laporin-Aja\\app\\Views\\admin\\masyarakat.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/masyarakat', [], true)
+ 5 APPPATH\Controllers\Aturakun.php(183): view('admin/masyarakat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Aturakun->masyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturakun))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Laporin-Aja\\public\\index.php')
+INFO - 2023-12-03 01:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-03 01:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

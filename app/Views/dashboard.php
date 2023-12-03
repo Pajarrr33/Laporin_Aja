@@ -41,9 +41,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/colors/default.css" id="colorSkinCSS">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="path/to/sweetalert.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="crm_body_bg">
@@ -59,15 +62,10 @@
         </div>
         <ul id="sidebar_menu">
             <li class="mm-active">
-                <a class="has-arrow" href="#" aria-expanded="false">
-
+                <a class="has-arrow" href="/admin/dashboard" aria-expanded="false">
                     <img src="/assets/img/menu-icon/1.svg" alt>
                     <span>Dashboard</span>
                 </a>
-                <ul>
-                    <li><a class="active" href="index.html">Classic</a></li>
-                    <li><a href="index_2.html">Minimal</a></li>
-                </ul>
             </li>
             <li class>
                 <a class="has-arrow" href="/admin/pengaduan/" aria-expanded="false">
@@ -75,15 +73,17 @@
                     <span>Pengaduan</span>
                 </a>
             </li>
+
+            <?php if(session()->get('level') == 'admin') : ?>
             <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
+                <a class="has-arrow" href="/admin/kelola-petugas" aria-expanded="false">
                     <img src="/assets/img/menu-icon/6.svg" alt>
                     <span>Manage Account</span>
                 </a>
                 <ul>
-                    <li><a href="/admin/petugas">Manage Admin / Staff account</a>
+                    <li><a href="/admin/kelola-petugas">Manage Admin / Staff account</a>
                     </li>
-                    <li><a href="#">Manage Masyarakat Account</a>
+                    <li><a href="/admin/kelola-masyarakat">Manage Masyarakat Account</a>
                     </li>
                 </ul>
             </li>
@@ -95,6 +95,7 @@
                     <span>Manage Access</span>
                 </a>
             </li>
+            <?php endif ; ?>
         </ul>
     </nav>
 
@@ -135,7 +136,7 @@
                                     <div class="profile_info_details">
                                         <a href="#">My Profile <i class="ti-user"></i></a>
                                         <a href="#">Settings <i class="ti-settings"></i></a>
-                                        <a href="/auth/logout">Log Out <i class="ti-shift-left"></i></a>
+                                        <a href="/logout">Log Out <i class="ti-shift-left"></i></a>
                                     </div>
                                 </div>
                             </div>
